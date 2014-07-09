@@ -100,7 +100,7 @@
           });
         });
         describe("_.isString",function(){
-          it("should expect that when you call _.isString on a sting it will output a boolean true",function(){
+          it("should expect that when you call _.isString on a string it will output a boolean true",function(){
             expect(_.isString("deep")).to.equal(true);
           });
           it("should expect that when you call _.isString on a non-string it will output a boolean false",function(){
@@ -122,3 +122,28 @@
 
 
 })();
+//
+// (function (){
+//   (function(){
+//   _ = {};
+//   _.pluck = function(obj,key){
+//     if(!obj,!key){
+//       throw new Error("_.pluck function requres an argument");
+//     } else if(!Array.isArray(obj)){
+//       throw new Error("_.pluck needs an array as the first argument");
+//     } else{
+//         return _.map(obj, _.property(key));
+//     }
+//   }
+//
+//   var people = [{name: 'mason', age: 18, weight: 170},{name: 'emily', age: 17, weight: 100},{name: 'jim', age: 11, weight: 85}];
+//
+//   describe("New Method Creation",function(){
+//     describe("New _.pluck",function(){
+//       it("should expect that when passed two parameters it returns an array",function(){
+//         expect(_.pluck(people, 'age')).to.deep.equal([18,17,11]);
+//       });
+//     });
+//   });
+// })()
+// })();
